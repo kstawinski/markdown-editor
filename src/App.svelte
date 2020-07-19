@@ -1,10 +1,13 @@
 <script>
 	import Helper from './components/Helper.svelte';
+	import marked from 'marked';
+
+	let text = '# Hello world!';
 </script>
 
 <main class="main">
-	<textarea class="main__textarea main__textarea--field" autofocus></textarea>
-	<div class="main__textarea main__textarea--preview"></div>
+	<textarea class="main__textarea main__textarea--field" autofocus bind:value={text}></textarea>
+	<div class="main__textarea main__textarea--preview">{@html marked(text)}</div>
 
 	<Helper />
 </main>
