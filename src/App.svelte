@@ -7,7 +7,7 @@
 
 <main class="main">
 	<textarea class="main__textarea main__textarea--field" autofocus bind:value={text}></textarea>
-	<div class="main__textarea main__textarea--preview">{@html marked(text)}</div>
+	<div class="main__textarea main__textarea--preview markdown-body">{@html marked(text)}</div>
 
 	<Helper />
 </main>
@@ -20,11 +20,11 @@
 
 .main__textarea {
 	padding: 40px;
-	font-size: 16px;
 	height: 100vh;
 }
 
 .main__textarea--field {
+	font-size: 16px;
 	font-family: inherit;
 	border: 0;
 	outline: 0;
@@ -32,6 +32,6 @@
 }
 
 .main__textarea--preview {
-	background-color: #eaeaea;
+	background-color: #f7f7f7;
 }
 </style>
