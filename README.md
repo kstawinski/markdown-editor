@@ -2,7 +2,7 @@
 Web app with **real time preview Markdown text**. Created to learn Svelte framework. Nothing special, but if you want to try this app:
 
 ## Run
-Open your terminal and run below commands. Then go to [localhost:5000](localhost:5000) and start using my editor..
+Open your terminal and run below commands. Then go to [localhost:5000](http://localhost:5000) and start using my editor..
 
 ```
 git clone https://github.com/kstawinski/markdown-editor.git
